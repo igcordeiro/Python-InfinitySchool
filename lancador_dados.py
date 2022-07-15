@@ -1,3 +1,5 @@
+
+
 #LANÇANDO DADOS 100 BEZES E CONTANDO QUANTAS VEZES CADA NÚMERO FOI SORTEADO
 
 from random import randint
@@ -13,6 +15,12 @@ count_3=0
 count_4=0
 count_5=0
 count_6=0
+maximo=max(lances_dado)
+minimo=min(lances_dado)
+ordem=sorted(lances_dado)
+print(f'A ordem crescente dos valores na lista é{ordem}\n')
+print(f'O valor menor foi {minimo}\n')
+print(f'O valor maior foi {maximo}\n')
 lances_dado=str(lances_dado)
 for numero in lances_dado:
     if numero in '1':
